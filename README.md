@@ -1,4 +1,21 @@
-## Installation
+<div align="center">
+
+  <h2 align="center">Real Time Chat</h3>
+
+  <p align="center">
+    Test task for Middle(Strong Junior) JavaScript(TypeScript) Full-stack developer
+    <br />
+
+      
+  </p>
+</div>
+
+### Features:
+- Real Time Chat.
+- Rooms.
+- When an Ethereum transaction ID is detected in the chat, a system notification will promptly display key transaction details including sender's wallet, recipient's wallet, transaction amount, and date.
+
+### Installation
 1. clone repo
 
 <br/>
