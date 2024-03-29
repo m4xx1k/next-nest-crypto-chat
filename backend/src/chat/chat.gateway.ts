@@ -1,4 +1,4 @@
-import { Logger } from '@nestjs/common';
+import { Inject, Logger } from '@nestjs/common';
 import {
   MessageBody,
   OnGatewayConnection,
@@ -24,8 +24,9 @@ import { RoomService } from '../room/room.service';
 })
 export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
   constructor(
-    private roomService: RoomService,
-    private transactionService: TransactionService,
+    @Inject(RoomService) private readonly roomService: RoomService,
+    @Inject(TransactionService)
+    private readonly transactionService: TransactionService,
   ) {}
 
   @WebSocketServer() server: Server = new Server<
